@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solo Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Jimmy's Diner</h1>
+      <h2>The best burgers and pizzas in town.</h2>
+    </header>
+    <main>
+      <div id="item-container"></div>
+      <!-- <section class="item">
+        <div class="item__icon">🍕</div>
+        <div class="item__detail">
+          <div class="item__detail__name">Pizza</div>
+          <div class="item__detail__ingredients">
+            pepperoni,mushroom,mozarella
+          </div>
+          <div class="item__detail__price" id="item-price">$14</div>
+        </div>
+        <div class="item__add"><i class="fa-solid fa-plus"></i></div>
+      </section>
+      <hr /> -->
+
+      <section class="order hidden" id="order">
+        <h1>Your order</h1>
+        <div id="order-container">
+          <!-- <div class="order__detail" id="order-detail">
+            <div class="order__detail__item">Pizza</div>
+            <button class="order__detail__btn-remove">remove</button>
+            <div class="order__detail__price">$14</div>
+          </div> -->
+        </div>
+        <hr />
+        <div class="total-price-container">
+          <div class="total-price">Total Price:</div>
+          <div id="total-price">$24</div>
+        </div>
+        <div class="complete-container">
+          <button
+            class="btn btn-complete"
+            id="btn-complete"
+            data-complete="complete"
+          >
+            Complete order
+          </button>
+        </div>
+      </section>
+      <section class="success hidden" id="success">
+        <div id="success-message">Thanks Onur! Your order is on its way!</div>
+      </section>
+    </main>
+    <div class="modal-pay hidden" id="modal-pay">
+      <div class="modal-container">
+        <h1>Enter card details</h1>
+        <form class="form-pay" id="form-pay">
+          <input
+            class="form-input"
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            required
+          />
+          <input
+            class="form-input"
+            name="cardNumber"
+            type="number"
+            placeholder="Enter card number"
+            required
+          />
+          <input
+            class="form-input"
+            name="cardCVV"
+            type="number"
+            placeholder="Enter CVV"
+            required
+          />
+          <button class="btn btn-pay" data-pay="pay">Pay</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
